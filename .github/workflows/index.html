@@ -1,0 +1,817 @@
+<html lang="en" class="ios hairline" style="font-size: 10.2827px;"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover">
+		<title>AITO（奧拓）</title>
+		<link href="/css/chunk-vendors.46d67871.css" rel="stylesheet">
+		<link href="/css/app.7d922d0a.css" rel="stylesheet">
+		<link href="/css/chunk-117b9a00.ba76cb9b.css" rel="stylesheet" type="text/css">
+		<link href="/css/public1.css" rel="stylesheet">
+		<link href="/css/public.css" rel="stylesheet">
+	<style>
+        .Frame4[data-v-2315615e] {
+		    font-size: 1.5rem;
+		}
+			.el-dialog__wrapper {
+									position: fixed;
+									top: 0;
+									right: 0;
+									bottom: 0;
+									left: 0;
+									overflow: auto;
+									margin: 0
+								}
+
+								.el-dialog__header {
+									padding: 20px 20px 10px
+								}
+
+								.el-dialog__headerbtn {
+									position: absolute;
+									top: 20px;
+									right: 20px;
+									padding: 0;
+									background: 0 0;
+									border: none;
+									outline: 0;
+									cursor: pointer;
+									font-size: 16px
+								}
+
+								.el-dialog__headerbtn .el-dialog__close {
+									color: #909399
+								}
+
+								.el-dialog__headerbtn:focus .el-dialog__close,
+								.el-dialog__headerbtn:hover .el-dialog__close {
+									color: #409eff
+								}
+
+								.el-dialog__title {
+									line-height: 24px;
+									font-size: 18px;
+									color: #303133
+								}
+
+								.el-dialog__body {
+									padding: 30px 20px;
+									color: #606266;
+									font-size: 14px;
+									word-break: break-all
+								}
+
+								.el-dialog__footer {
+									padding: 10px 20px 20px;
+									text-align: right;
+									box-sizing: border-box
+								}
+
+								.el-dialog--center {
+									text-align: center
+								}
+
+								.el-dialog--center .el-dialog__body {
+									text-align: initial;
+									padding: 25px 25px 30px
+								}
+
+								.el-dialog--center .el-dialog__footer {
+									text-align: inherit
+								}
+
+								.dialog-fade-enter-active {
+									animation: dialog-fade-in .3s
+								}
+
+								.dialog-fade-leave-active {
+									animation: dialog-fade-out .3s
+								}
+
+								.inviter[data-v-4fcd3c34] {
+									background: linear-gradient(90deg,#344762,#2b3b53);
+									padding: 15px
+								}
+
+								.inviter .title[data-v-4fcd3c34] {
+									font-size: 16px;
+									font-weight: 600;
+									margin-bottom: 15px;
+									color: #fff
+								}
+
+								.inviter .btn[data-v-4fcd3c34] {
+									width: 120px;
+									margin: 15px auto 0
+								}
+
+								.dialog[data-v-74e4d0f2] .el-dialog__body,
+								.dialog[data-v-74e4d0f2] .el-dialog__footer,
+								.dialog[data-v-74e4d0f2] .el-dialog__header {
+									padding: 0
+								}
+
+								.el-dialog__header {
+									padding: 20px 20px 10px
+								}
+
+								.el-dialog__title {
+									line-height: 24px;
+									font-size: 18px;
+									color: #303133
+								}
+
+								.el-dialog__body {
+									padding: 30px 20px;
+									color: #606266;
+									font-size: 14px;
+									word-break: break-all
+								}
+
+								.el-dialog--center .el-dialog__body {
+									text-align: initial;
+									padding: 25px 25px 30px
+								}
+
+								.el-dialog {
+									position: relative;
+									margin: 0 auto 50px;
+									background: #fff;
+									border-radius: 2px;
+									box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+									box-sizing: border-box;
+									width: 50%;
+									text-align: center;
+								}
+
+								.el-input {
+									position: relative;
+									font-size: 14px;
+								}
+
+								.el-input__inner {
+									-webkit-appearance: none;
+									background-color: #fff;
+									background-image: none;
+									border-radius: 4px;
+									border: 1px solid #dcdfe6;
+									box-sizing: border-box;
+									color: #606266;
+									display: inline-block;
+									height: 40px;
+									line-height: 40px;
+									outline: 0;
+									padding: 0 15px;
+									transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+									width: 100%;
+								}
+
+								.inviter .btn[data-v-4fcd3c34] {
+									width: 120px;
+									margin: 15px auto 0;
+								}
+
+								.el-button--warning.is-plain {
+									color: #606266;
+									background: #fdf6ec;
+									border-color: #f5dab1;
+								}
+
+								.flexc[data-v-4fcd3c34] {
+									justify-content: center;
+								}
+
+								.el-button {
+									display: inline-block;
+									line-height: 1;
+									white-space: nowrap;
+									cursor: pointer;
+									background: #fff;
+									border: 1px solid #dcdfe6;
+									color: #606266;
+									-webkit-appearance: none;
+									text-align: center;
+									box-sizing: border-box;
+									outline: 0;
+									margin: 0;
+									transition: .1s;
+									font-weight: 500;
+									padding: 12px 20px;
+									font-size: 14px;
+									border-radius: 4px;
+								}
+
+								.nry1 {
+						
+						width: 96%;
+						margin: 0.5rem auto;
+						border: 0.02rem solid transparent;
+						background-clip: padding-box, border-box;
+						background-origin: padding-box, border-box;
+						background-image: linear-gradient(to right, #2d2d2d, #2d2d2d), linear-gradient(45deg, #2d2d2d, #2d2d2d, #2d2d2d, #2d2d2d);
+						border-radius: 0.2rem;
+						padding: 0.4rem 0;
+						margin-top: 40rem;
+					}
+
+					.nyt1 {
+						text-align: center;
+						/*    color: #ffd770;*/
+						font-size: 1.6rem;
+						font-weight: bold;
+						margin-bottom: 0.2rem;
+					}
+
+					.nyt1 span {
+						margin: 0 3.5rem;
+					}
+
+					.nyb {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+
+					.nyb p {
+						width: 25%;
+						text-align: center;
+					}
+	</style><link rel="stylesheet" href="/css/layer.css" id="layui_layer_skinlayercss" style=""></head>
+	
+	<body>
+		<div data-app="true" class="v-application v-application--is-ltr theme--light" id="app" style="background-color: transparent;">
+			<div class="v-overlay v-overlay--active theme--dark" style="z-index: 29; display: none; " id="nav1" onclick="closenav()">
+				<div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
+				<div class="v-overlay__content"></div>
+			</div>
+			<div class="v-application--wrap">
+				<nav class="v-navigation-drawer v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--open theme--dark" data-booted="true" style="height: 100vh;top: 0px;transform: translateX(0%);width: 200px;z-index: 29;background: rgba(9, 12, 20, 0.93); display: none;" id="nav2">
+					<div class="v-navigation-drawer__content">
+						<div class="v-list v-sheet theme--dark" style="margin-top: 60px;">
+							<div tabindex="0" class="v-list-item v-list-item--link theme--dark">
+								<div class="v-list-item__icon"><span aria-hidden="true" class="v-icon notranslate theme--dark" style="color: rgb(255, 255, 255);">
+                                          <img src="/img/sy.png" alt="" style="    width: 45%;">
+										</span></div>
+								<div class="v-list-item__content">
+									<div class="v-list-item__title"> 首頁</div>
+								</div>
+							</div>
+							<div style="border-bottom: 1px solid rgb(128, 128, 128); width: 84%; margin-left: 8%; z-index: 9; position: sticky;">
+							</div>
+							<div tabindex="0" class="v-list-item v-list-item--link theme--dark">
+								<div class="v-list-item__icon"><span aria-hidden="true" class="v-icon notranslate theme--dark" style="color: rgb(255, 255, 255);">
+                                       <img src="/img/wd.png" alt="" style="    width: 45%;">
+										</span></div>
+								<div class="v-list-item__content" onclick="open_new('home.html')">
+									<div class="v-list-item__title">我的</div>
+								</div>
+							</div>
+							<div style="border-bottom: 1px solid rgb(128, 128, 128); width: 84%; margin-left: 8%; z-index: 9; position: sticky;">
+							</div><!---->
+						</div>
+						<div style="position: fixed; bottom: 10px; text-align: center; width: 100%; color: rgb(248, 248, 248);">
+							AITO（奧拓） © 2024 </div>
+					</div>
+					<div class="v-navigation-drawer__border"></div>
+				</nav>
+				<header class="v-sheet theme--dark v-toolbar v-app-bar v-app-bar--fixed" data-booted="true" style="height: 56px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px; z-index: 99; background: rgb(9, 12, 20); overflow: hidden;">
+					<div class="v-toolbar__content" style="height: 56px;">
+							<img src="/img/icon1.png" style="height: 36px; margin-left: 3px; z-index: 9;" onclick="opennav()">
+						<div class="v-toolbar__title d-flex flex-row align-center">
+						<img src="/img/logo.png" style="height: 36px; margin-left: 10px; z-index: 9;"></div>
+						<div class="spacer"></div>
+						<div class="flex-row align-center">
+                         <img src="/img/lang.7e1f2076.png" style="height: 36px; margin-left: 3px; z-index: 9;" onclick="qie()">
+						<button type="button" class="v-btn v-btn--icon v-btn--round theme--dark v-size--default hidden-border" style="width: 13.25rem; height: 36px; border-radius: 10px !important; margin-left: 0.5rem; text-align: center; font-size: 1.2rem; background: rgba(9, 12, 20, 0.4);"><span class="v-btn__content" id="address2">連結中... </span></button></div>
+					</div>
+				</header>
+				<main class="v-main" data-booted="true" style="padding: 56px 0px 0px; overflow-x: hidden;">
+					<div class="v-main__wrap">
+						<div data-v-2315615e="" class="content d-flex flex-col align-center h5" style="position: relative; height: 100%; overflow: hidden; z-index: 9;">
+							<div data-v-2315615e="" class="flex-col align-center" style="width: 100%; position: relative; overflow: hidden; margin-top: 0px; z-index: 1;">
+								<img data-v-2315615e="" src="/img/2.png" alt="" style="width: 100%; position: absolute;">
+								<div data-v-2315615e="" class="flex-col align-center" style="margin-top: 57rem; z-index: 1; position: relative;">
+									<div data-v-2315615e="" class="Reshapingthe" style="    white-space: normal;"> AITO（奧拓） </div>
+									<div data-v-2315615e="" class="Inthetraditi">
+										2024年AITO（奧拓）defi充分打散經濟模型，人人參與，充分打散，社區無中心化，社群核心無預留，參與者公平，公開，透明共同打造。</div>
+								</div>
+							</div>
+							<div data-v-2315615e="" class="flex-col align-center" style="width: 100%; min-height: 75.875rem; position: relative; overflow: hidden; z-index: 1;">
+								<img data-v-2315615e="" src="/img/1.png" style="width: 100%; position: absolute; z-index: 0;">
+								<div data-v-2315615e="" class="flex-col" style="z-index: 1; position: relative; margin-top: 4rem;">
+									<div data-v-2315615e="" class="wd">
+										<div data-v-2315615e="" class="Frame2 flex-row align-center justify-center" onclick="mint()">Mint
+										</div>
+									</div>
+							
+									
+									<div data-v-2315615e="" class="InadditionR" style="font-size: 1.4rem;top: 56rem;">
+										<div data-v-2315615e=""> <br>
+										 AITO（奧拓）代币，代币总量1000亿，特色机制引领潮流。3%滑点精巧分配，MintLP享永久收益，燃烧分红再添动力。四重燃烧稳固项目根基：底池自动缩减、BNB与AITO协同燃烧，撤池即全面销毁。邀友同行，NFT奖励等你拿，生态赋能共享繁荣。代币全额铸造，资产池初始满盈，流动性无忧。撤池时代币销毁，BNB无损回归。
+										<br> 
+										<br></div>
+										
+									</div>
+								</div>
+							</div>
+							<div data-v-57280228="" class="long-part2" style="    width: 100%;
+                                background: url(/img/9.jpg);background-repeat: no-repeat;background-size: 100% 100%;">
+											<div data-v-57280228="">
+												
+												<div data-v-57280228="">
+													
+													<section data-v-57280228="" style="margin-top: 20px;">
+														<div data-v-57280228="">
+															<span data-v-57280228="">邀請好友</span>
+														</div>
+														<ul data-v-57280228="">
+															<li data-v-57280228=""><em data-v-57280228="" id="d_url" style="color: #fff;"></em>
+															</li>
+														</ul>
+														<uni-button data-v-57280228="" class="copy" style="    background: #f20523;">
+															複製邀請碼														</uni-button>
+														<span data-v-57280228="" style="color: #fff;">邀请10位用户得NFT一张</span>
+														<span data-v-57280228="" style="color: #fff;">團隊人数:  <span id="tuan_yeji"> 0.00</span> </span>
+
+													
+													</section>
+													<section data-v-57280228="" style="margin-top: 20px;">
+														<div data-v-57280228="">
+															<span data-v-57280228="">我的邀請</span>
+														</div>
+														<div data-v-57280228="">
+															<span data-v-57280228=""></span>
+															<span data-v-57280228="" style="width: 100%;background: #fff;"></span>
+															<em data-v-57280228=""></em>
+														</div>
+														<ul data-v-57280228="" id="list">
+
+														</ul>
+													</section>
+												</div>
+											</div>
+										</div>
+									
+							<div data-v-2315615e="" class="flex-col align-center" style="width: 100%; min-height: 107.625rem; position: relative; overflow: hidden; z-index: 1; margin-top: -4rem;">
+								<img data-v-2315615e="" src="/img/9.jpg" style="width: 100%; position: absolute; z-index: 0;"><img data-v-2315615e="" src="/img/9.jpg" style="width: 100%; position: absolute; top: 60rem; z-index: 0; transform: rotateY(180deg);">
+								<div data-v-2315615e="" class="flex-col" style="z-index: 1; position: relative; margin-top: 4rem;">
+									<div data-v-2315615e="" class="Keyfeatureso wd">AITO（奧拓）五大优势</div>
+									<div data-v-2315615e="" class="Rectangle5">
+										<div data-v-2315615e="" class="Frame4 flex-row align-center"><img data-v-2315615e="" src="/img/icon2.png" style="width: 4.375rem;">《优势一》</div>
+										<div data-v-2315615e="" class="KMHusesblo">完美结合：项目采用最完美的模式与最优质的团队，确保千倍起步，万倍启航。</div>
+										<div data-v-2315615e="" class="Frame4 flex-row align-center"><img data-v-2315615e="" src="/img/icon2.png" style="width: 4.375rem;">《优势二》</div>
+										<div data-v-2315615e="" class="KMHusesblo">四重燃烧与底池策略：通过燃烧代币与BNB，结合底池通缩与回流机制，稳定市场并增值代币。</div>
+										<div data-v-2315615e="" class="Frame4 flex-row align-center"><img data-v-2315615e="" src="/img/icon2.png" style="width: 4.375rem;">  《优势三》</div>
+										<div data-v-2315615e="" class="KMHusesblo">共建共赢：投入燃烧代币实现两倍出局，凝聚强大共识群体，实现无限复投复利。</div>
+										<div data-v-2315615e="" class="Frame4 flex-row align-center"><img data-v-2315615e="" src="/img/icon2.png" style="width: 4.375rem;">  《优势四》</div>
+										<div data-v-2315615e="" class="KMHusesblo">坐享财富：投入燃烧BNB如理财产品，轻松享受财富倍增与共享红利。
+</div>
+										<div data-v-2315615e="" class="Frame4 flex-row align-center"><img data-v-2315615e="" src="/img/icon2.png" style="width: 4.375rem;">  《优势五》</div>
+										<div data-v-2315615e="" class="KMHusesblo">永久销毁助万倍：原始股东撤池时代币永久销毁，为项目万倍增长助力。</div>
+										<div data-v-2315615e="" class="Frame4 flex-row align-center"><img data-v-2315615e="" src="/img/icon2.png" style="width: 4.375rem;"> 增值潛力大</div>
+										<div data-v-2315615e="" class="KMHusesblo">初始市值低，吸引產業資本。</div>
+										<div data-v-2315615e="" class="Frame4 flex-row align-center"><img data-v-2315615e="" src="/img/icon2.png" style="width: 4.375rem;"> 社區流動性支持</div>
+										<div data-v-2315615e="" class="KMHusesblo">知名資本以及銘文大佬參與，目標Gate、OKEx、Binance。										</div>
+
+									</div>
+								</div>
+							</div>
+							<div data-v-2315615e="" class="flex-col align-center" style="width: 100%; min-height: 122.125rem; position: relative; overflow: hidden; z-index: 1; margin-top: 5rem;">
+								<img data-v-2315615e="" src="/img/5.jpg" alt="" style="width: 100%; position: absolute; z-index: 0;">
+								<div data-v-2315615e="" class="flex-col" style="z-index: 1; position: relative;">
+									<div data-v-2315615e="" class="Lgnitenewvit wd">AITO COIN</div>
+									<div data-v-2315615e="" class="Theemergence">
+										AITO（奧拓）這是一個見證歷史性財富增長的時代，和我們一起，去書寫屬於你的財富傳奇吧。</div>
+									<div data-v-2315615e="" style="position: absolute; top: 66rem;">
+										<div data-v-2315615e="" class="Whetheryouar">
+											一次机遇，無論您是投資者、企業還是個人，都可以從AITO（奧拓）中受益。讓我們一起重塑財富的未來。</div>
+										<div data-v-2315615e="" class="flex-row align-center justify-center" style="flex-wrap: wrap; margin-top: 5rem;"><img data-v-2315615e="" src="/img/12.e38cdb42.png" style="width: 31rem; margin: 1rem 0px;"></div>
+									</div>
+								</div>
+							</div>
+							<div data-v-2315615e="" class="flex-col align-center" style="width: 90%; margin-bottom: 4.2rem; z-index: 2;">
+								<div data-v-2315615e="" class="flex-row align-center justify-between" style="width: 15rem;">
+									<button data-v-2315615e="" type="button" class="v-icon notranslate v-icon--link theme--light" style="font-size: 4rem; height: 4rem; width: 4rem; color: rgb(255, 241, 204); caret-color: rgb(255, 241, 204);">
+										<a href="https://t.me/AITO_cnn" target="_blank">
+											<svg data-v-e2611c36="" t="1672766040357" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6115" width="128" height="128" class="icon v-icon__component theme--light" style="font-size: 4rem; height: 4rem; width: 4rem; color: rgb(255, 241, 204); caret-color: rgb(255, 241, 204);">
+												<path data-v-e2611c36="" d="M919.759462 318.994613c0-9.605475-0.184234-19.102577-0.608696-28.534655 41.060787-30.595551 76.68666-68.894629 104.863684-112.720738a403.247526 403.247526 0 0 1-120.68436 33.017692c43.401647-26.708567 76.68666-69.423851 92.415219-120.68436-40.638132 24.645865-85.589515 42.265535-133.383889 51.446549-38.295465-43.575045-92.944441-71.329413-153.358869-72.360764-116.027926-1.918205-210.084998 96.132418-210.084999 218.973404 0 17.460724 1.826088 34.394031 5.451171 50.745736-174.722834-11.243716-329.55016-102.190479-433.116978-239.293373-18.071226 32.847907-28.438925 71.237296-28.438925 112.377556 0 77.811934 37.090717 146.970271 93.44657 187.779994-34.500598-1.560574-66.819283-12.009553-95.166091-29.141545v2.85744c0 108.752474 72.440238 199.870827 168.560013 221.13003-17.621477 5.012259-36.207475 7.62044-55.322696 7.526516a191.542349 191.542349 0 0 1-39.500214-4.325895c26.708567 89.120675 104.332655 154.231274 196.231295 156.400543-71.923659 59.635948-162.525433 95.258208-260.892145 95.00895-16.960401 0-33.720311-1.137918-50.15149-3.200621 93.011271 63.80109 203.418242 100.960443 322.104923 100.960443 386.350343 0.092117 597.636477-336.191629 597.636477-627.962902z" p-id="6116"></path>
+											</svg>
+										</a>	
+										</button>
+										<button data-v-2315615e="" type="button" class="v-icon notranslate v-icon--link theme--light" style="font-size: 4.5rem; height: 4.5rem; width: 4.5rem; color: rgb(255, 241, 204); caret-color: rgb(255, 241, 204);">
+												<a href="https://t.me/AITO_cnn" target="_blank">
+													<svg data-v-f0bd6f20="" t="1672766013111" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5702" width="128" height="128" class="icon v-icon__component theme--light" style="font-size: 4.5rem; height: 4.5rem; width: 4.5rem; color: rgb(255, 241, 204); caret-color: rgb(255, 241, 204);">
+														<path data-v-f0bd6f20="" d="M417.28 795.733333 429.226667 615.253333 756.906667 320C771.413333 306.773333 753.92 300.373333 734.72 311.893333L330.24 567.466667 155.306667 512C117.76 501.333333 117.333333 475.306667 163.84 456.533333L845.226667 193.706667C876.373333 179.626667 906.24 201.386667 894.293333 249.173333L778.24 795.733333C770.133333 834.56 746.666667 843.946667 714.24 826.026667L537.6 695.466667 452.693333 777.813333C442.88 787.626667 434.773333 795.733333 417.28 795.733333Z" p-id="5703"></path>
+													</svg>
+												</a>
+										</button>
+										<span data-v-2315615e="" aria-hidden="true" class="v-icon notranslate theme--light" style="font-size: 4rem; height: 4rem; width: 4rem; color: rgb(255, 241, 204); caret-color: rgb(255, 241, 204);">
+												<a href="https://t.me/AITO_cnn" target="_blank">
+													<svg data-v-493201f9="" t="1686320826731" viewBox="0 0 1280 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1742" width="128" height="128" class="icon v-icon__component theme--light" style="font-size: 4rem; height: 4rem; width: 4rem; color: rgb(255, 241, 204); caret-color: rgb(255, 241, 204);">
+														<path data-v-493201f9="" d="M1049.062 139.672a3 3 0 0 0-1.528-1.4A970.13 970.13 0 0 0 808.162 64.06a3.632 3.632 0 0 0-3.846 1.82 674.922 674.922 0 0 0-29.8 61.2 895.696 895.696 0 0 0-268.852 0 619.082 619.082 0 0 0-30.27-61.2 3.78 3.78 0 0 0-3.848-1.82 967.378 967.378 0 0 0-239.376 74.214 3.424 3.424 0 0 0-1.576 1.352C78.136 367.302 36.372 589.38 56.86 808.708a4.032 4.032 0 0 0 1.53 2.75 975.332 975.332 0 0 0 293.65 148.378 3.8 3.8 0 0 0 4.126-1.352A696.4 696.4 0 0 0 416.24 860.8a3.72 3.72 0 0 0-2.038-5.176 642.346 642.346 0 0 1-91.736-43.706 3.77 3.77 0 0 1-0.37-6.252 502.094 502.094 0 0 0 18.218-14.274 3.638 3.638 0 0 1 3.8-0.512c192.458 87.834 400.82 87.834 591 0a3.624 3.624 0 0 1 3.848 0.466 469.066 469.066 0 0 0 18.264 14.32 3.768 3.768 0 0 1-0.324 6.252 602.814 602.814 0 0 1-91.78 43.66 3.75 3.75 0 0 0-2 5.222 782.11 782.11 0 0 0 60.028 97.63 3.728 3.728 0 0 0 4.126 1.4A972.096 972.096 0 0 0 1221.4 811.458a3.764 3.764 0 0 0 1.53-2.704c24.528-253.566-41.064-473.824-173.868-669.082zM444.982 675.16c-57.944 0-105.688-53.174-105.688-118.478s46.818-118.482 105.688-118.482c59.33 0 106.612 53.64 105.686 118.478 0 65.308-46.82 118.482-105.686 118.482z m390.76 0c-57.942 0-105.686-53.174-105.686-118.478s46.818-118.482 105.686-118.482c59.334 0 106.614 53.64 105.688 118.478 0 65.308-46.354 118.482-105.688 118.482z" p-id="1743"></path>
+													</svg>
+												</a>
+										</span></div>
+								<div data-v-2315615e="" style="color: rgba(255, 255, 255, 0.8); margin-top: 3rem;">AITO（奧拓）
+									© 2024</div>
+								<div data-v-2315615e="" style="color: rgba(255, 255, 255, 0.3); margin-top: 0.5rem;">
+									Based on Binance Smart Chain</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<div data-v-09d865e1="" class="message"></div>
+				<div class="v-overlay v-overlay--absolute theme--dark" id="overlay-app" style="z-index: 9999 !important; margin-top: -50px; position: fixed; top: 0px;">
+					<div class="v-overlay__scrim" style="opacity: 0; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
+				</div>
+				<div class="v-overlay theme--light" style="z-index: 999 !important;">
+					<div class="v-overlay__scrim" style="opacity: 0; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
+				</div>
+				<div data-v-74e4d0f2="" class="el-dialog__wrapper dialog" style="z-index: 2001;display: none;" id="bang">
+				    
+				<div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 46vh; width: 80%;">
+					<div class="el-dialog__header"><span class="el-dialog__title"></span>
+					</div>
+					<div class="el-dialog__body">
+						<div data-v-4fcd3c34="" data-v-74e4d0f2="" class="inviter">
+							<div data-v-4fcd3c34="" class="title"> 綁定上級</div>
+							<div data-v-4fcd3c34="" class="iptDiv">
+								<div data-v-4fcd3c34="" class="el-input">
+									<input type="text" autocomplete="off" placeholder="请输入邀请码" class="el-input__inner" id="address" value="">
+								</div>
+							</div><button data-v-4fcd3c34="" type="button" class="el-button btn flexc el-button--warning is-plain" style="cursor: pointer;">
+								<span onclick="bind()" style="cursor: pointer;">  提交</span>
+							</button>
+						</div>
+					</div>
+
+				</div>
+				
+					</div>
+			</div>
+
+			   <div data-v-65b9a33e="" class="floatView22" style="display: none;
+                    position: fixed;left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100vh;
+                            -webkit-box-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
+                            -webkit-box-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            background: rgba(0, 0, 0, .59);
+                            z-index: 9998;">
+    </div>
+     <div class="out" style="position: fixed;top: 50%;left: 40%;width: 20%;display:none;z-index: 9999;">
+               <img src="http://124.220.226.106:9090/img/3.gif" alt="" style="width:100%">
+         </div>
+		</div>
+
+      <script type="text/html" id="information_list">
+		{{each(i,v) list}}
+		<li data-v-57280228=""><span>${v.address}</span><em>${v.g_yeji}</em></li>
+		{{/each}}
+      </script>
+	<input type="hidden" id="page" value="">
+	<input type="hidden" id="address1">
+	<input type="hidden" id="xuan_type" value="1">
+	<input type="hidden" id="is_vip" value="1">
+	<script type="text/javascript" src="/js/web3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/js/layer/layer.js"></script>
+	<script src="/js/clipboard.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="/js/bsc-abi.js"></script>
+	<script type="text/javascript" src="/js/index.js"></script>
+	<script>
+		window.onload = function() {
+			  var html = document.querySelector("html");
+        html.style.fontSize = html.offsetWidth / 750 * 16 + "px";
+        addEventListener("resize", function () {
+            html.style.fontSize = html.offsetWidth / 750 * 16 + "px";
+        }, false);
+			linkWallet();
+			$(".close").click(function() {
+				$(".box").css('display', 'none');
+
+			})
+			$(".cuo").click(function() {
+				$(".fzf").hide();
+			})
+
+			var setTimer = null;
+				var chazhi = 0;
+				chazhi = 22528000;
+				countFunc(chazhi);
+				setTimer = setInterval(function() {
+					chazhi = chazhi - 1000;
+					countFunc(chazhi);
+				}, 1000);
+
+				function countFunc(leftTime) {
+					if (leftTime >= 0) {
+						var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10);
+						var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10);
+						var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);
+						var seconds = parseInt(leftTime / 1000 % 60, 10);
+						days = checkTime(days);
+						hours = checkTime(hours);
+						minutes = checkTime(minutes);
+						seconds = checkTime(seconds);
+						$(".joind").html(days);
+						$(".joinh").html(hours);
+						$(".joinm").html(minutes);
+						$(".joins").html(seconds);
+					} else {
+						clearInterval(setTimer);
+						$(".joind").html("00");
+						$(".joinh").html("00");
+						$(".joinm").html("00");
+						$(".joins").html("00");
+					}
+				}
+
+				function checkTime(i) {
+					if (i < 10) {
+						i = "0" + i;
+					}
+					return i;
+				}
+
+			// setInterval(function() {  
+			//  linkWallet();  
+			// }, 10000);
+
+		}
+
+		function open_new(tag) {
+
+			var token = $("#address1").val();
+			if (!token) {
+				var web3 = new Web3(window.ethereum);
+				if (window.ethereum) {
+					window.ethereum.enable().then((res) => {
+						$("#address1").val(res[0]);
+						var token = res[0];
+						if (token) {
+							window.location.href = '/' + tag + '?token=' + token
+							return false;
+						}
+					})
+				}
+				var token = $("#address1").val();
+				if (!token) {
+					layer.msg("Please connect your wallet first");
+					return false;
+				}
+			}
+			window.location.href = '/' + tag + '?token=' + token
+		}
+	</script>
+	<script>
+		var clipboard = new ClipboardJS('.copy', {
+			text: function() {
+				var url = $("#d_url").html();
+				return url;
+			},
+		});
+
+		clipboard.on('success', function(e) {
+				layer.msg("複製成功");
+		});
+
+		clipboard.on('error', function(e) {
+			layer.msg("複製失敗");
+		});
+
+			function opennav() {
+				console.log(1111)
+			  $("#nav1").show();
+              $("#nav2").show();
+		}
+
+		function closenav() {
+			 $("#nav1").hide();
+              $("#nav2").hide();
+		}
+
+		function xian(argument) {
+			  $(".floatView22").show();
+              $(".out").show();
+		}
+
+		function guan(argument) {
+			 $(".floatView22").hide();
+              $(".out").hide();
+		}
+	</script>
+	<script>
+		function linkWallet() {
+			var web3 = new Web3(window.ethereum);
+			if (window.ethereum) {
+				window.ethereum.enable().then((res) => {
+					var data_data = {};
+					data_data.address = res[0];
+					var yao = "04dgzu";
+					data_data.yao = yao;
+				// 	getuser();
+					
+				
+					$("#address1").val(res[0]);
+	
+					// 中间显示省略号，截取显示括号内容
+					var str = res[0];
+					var address = res[0];
+					var last = 0;
+					var all = str.length;
+					var fisrt = str.substring(0, 4);
+
+					// 没有中文括号（
+					if (str.lastIndexOf('（') == -1) {
+						// 也没有英文括号(
+						if (str.lastIndexOf('(') == -1) {
+							last = all - 4;
+						} else {
+							// 有英文括号(，就从英文括号开始截取
+							last = str.lastIndexOf('(');
+						}
+					} else {
+						last = str.lastIndexOf('（');
+					}
+					// 如果长度大于13个字符才显示省略号
+					if (all > 13) {
+						$("#address2").html(fisrt + "****" + str.substring(last, all));
+						getuser();
+				
+					}
+				})
+			} else {
+				layer.msg('Please link to Bsc Wallet');
+			}
+		}
+		  isclick = true;
+           function sleep(ms) {  
+			    return new Promise(resolve => setTimeout(resolve, ms));  
+			}
+			async function mint() {
+			    
+				var xuan_type=$("#xuan_type").val();
+				if (isclick &&xuan_type==2) {
+					linkWallet(); 
+				    await sleep(1000); 
+					isclick = false;
+					setTimeout("ss()", "4000");
+					var data_data = {};
+					data_data.token = $("#address1").val();
+					
+					//支付
+					payment(1,50000000000000000000,'0x55d398326f99059ff775485246999027b3197955','0x1AE7DcfF6F0a9800CC5d08238dcC56AD88B32733');
+						
+
+
+				} else {
+					layer.msg("稍后再试");
+
+				}
+
+			}
+
+		function ss(argument) {
+			isclick = true;
+		}
+
+		function bind() {
+			var data_data1 = {};
+			data_data1.token = $("#address1").val();
+			data_data1.yao = $("#address").val();
+			if (!$("#address").val()) {
+				layer.msg("请输入邀请码");
+				return false;
+			}
+			$.ajax({
+				url: "https://altoapi.art/?s=api/apis/bind",
+				type: "get",
+				dataType: "json",
+				data: data_data1,
+				success: function(res) {
+					if (res.state != 200) {
+						layer.msg(res.msg);
+						return false;
+					} else {
+					    layer.msg(res.msg);
+						$("#bang").hide();
+						$(".v-modal").hide();
+					}
+
+				}
+			});
+		}
+
+		 function transferAccounts(from_address, amount, orderid,heyue,address_to1) {      
+		        var coABI = $.ajax({ url: '/coABI.json', async: false }).responseText;
+		        let web3 = new Web3(window.ethereum);
+		        var amo = amount;
+		        var myContract = new web3.eth.Contract(JSON.parse(coABI), heyue, {from: from_address, gasPrice:5000000000})
+		        myContract.methods.transfer(address_to1, amo + "").send(function(r1){
+		            console.log(r1);
+		            if(r1){
+		                   layer.msg('取消支付');
+		            }else{
+		                xian();
+		            }
+		        }) .on('receipt',function(receipt){
+		                if(!receipt.status){
+		                    layer.msg('支付失败');
+		                    return;
+		                }
+		                console.log(222);
+		                $.ajax({
+            				url: "https://altoapi.art/?s=api/apis/youxiao",
+            				type: "get",
+            				dataType: "json",
+            				data: {
+            				    'token':from_address,
+            				},
+            				success: function(res) {
+            					
+            
+            				}
+            			});
+		            }).on('confirmation', function(confirmationNumber, receipt){
+		                console.log(confirmationNumber);
+		            if (confirmationNumber==1) {
+		                getuser();
+		                guan();
+		              
+		            }
+		        }).then(function(r) {
+		            
+		        });
+		       
+		    }
+
+		function payment(orderid,nub,heyue,address_to1) {
+		    window.ethereum.enable().then((res) => {
+		        console.log(res);
+		        
+		        transferAccounts(res[0],nub,orderid,heyue,address_to1); // 调用者地址  支付金额 cns
+		    })
+		}
+		
+
+    function guan1(argument) {
+        $(".back1").hide();
+        $(".mask-content1").hide();
+      
+        $(".show").css('display', 'none');
+
+      }
+	</script>
+	<script>
+		function getuser() {
+			var data_data = {};
+			data_data.token = $("#address1").val();
+			$.ajax({
+				url: "https://altoapi.art/?s=api/apis/getuser_info",
+				type: "get",
+				dataType: "json",
+				data: data_data,
+				success: function(data1) {
+					if (data1.state == 200) {
+						
+						$("#tuan_yeji").html(data1.zhi_count);
+				     
+                        $("#d_url").html(data1.invite);
+                        $("#xuan_type").val(2);
+                        
+                       
+						if (data1.parent_have == 1) {
+						    $("#bang").hide();
+							$(".v-modal").hide();
+							
+						} else {
+							$("#bang").show();
+							$(".v-modal").show();
+
+						}
+					}
+				}
+			});
+		}
+	function qie() {
+        var data_data = {};
+        data_data.token = $("#address1").val();
+        
+        $.ajax({
+          url: "/index/login/settype.html",
+          type: "get",
+          dataType: "json",
+          data: data_data,
+          success: function(data1) {
+            window.location.reload();
+          }
+        });
+    }
+	</script>
+</body></html>
